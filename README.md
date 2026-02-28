@@ -8,9 +8,37 @@ The problem is a **multi-class classification task**, where the target variable 
 ---
 
 ## Objective
-To build a deep learning model that can accurately recognize handwritten digits using neural networks.
+- Understand image classification using neural networks
+- Preprocess image data for model training
+- Build an ANN model using TensorFlow and Keras
+- Train and evaluate the model
+- Achieve high accuracy on unseen test data
 
 ---
+
+## Dataset Description
+
+The dataset used in this project is the MNIST Handwritten Digit Dataset.
+
+- 60,000 training images
+- 10,000 testing images
+- Image size: 28 × 28 pixels
+- Grayscale images
+- 10 classes (digits 0–9)
+
+Each image contains a handwritten digit centered in a 28×28 pixel frame.
+
+---
+
+## Dataset Source
+
+The MNIST dataset is not uploaded to this repository due to its large size.
+
+Instead, the dataset is directly loaded using TensorFlow/Keras:
+
+```python
+from tensorflow.keras.datasets import mnist
+
 
 ## Dataset Information
 - Dataset: MNIST Handwritten Digits
