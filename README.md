@@ -1,108 +1,104 @@
-MNIST Digit Classification using Artificial Neural Network
-Project Overview
+# MNIST Digit Classification using Artificial Neural Network (ANN)
 
-This project aims to classify handwritten digits (0–9) from grayscale images using an Artificial Neural Network (ANN).
+## Project Overview
+This project aims to classify handwritten digits (0–9) from the MNIST dataset using an Artificial Neural Network (ANN).
 
-The problem is a multi-class classification task, where the target variable represents digits from 0 to 9.
+The problem is a **multi-class classification task**, where the target variable represents digits from 0 to 9.
 
-Objective
+---
 
-To build a Deep Learning model that can accurately recognize handwritten digits using the MNIST dataset.
+## Objective
+To build a deep learning model that can accurately recognize handwritten digits using neural networks.
 
-Dataset Information
+---
 
-Total Training Images: 60,000
+## Dataset Information
+- Dataset: MNIST Handwritten Digits
+- Total Training Images: 60,000
+- Total Testing Images: 10,000
+- Image Size: 28 × 28 pixels
+- Number of Classes: 10 (Digits 0–9)
 
-Total Testing Images: 10,000
+---
 
-Image Size: 28 × 28 pixels
+## Technologies Used
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- TensorFlow / Keras
+- Scikit-learn
 
-Image Type: Grayscale
+---
 
-Number of Classes: 10 (Digits 0–9)
-
-The MNIST dataset is a benchmark dataset widely used for image classification tasks.
-
-Technologies Used
-
-Python
-
-NumPy
-
-Matplotlib
-
-TensorFlow
-
-Keras
-
-Scikit-learn
-
-Seaborn
-
-Data Preprocessing
-
+## Data Preprocessing
 The following preprocessing steps were performed:
 
-Normalized pixel values from 0–255 to 0–1
+- Normalized pixel values (scaled between 0 and 1)
+- Flattened 28×28 images into 784-dimensional vectors
+- Converted labels into categorical format (One-Hot Encoding)
 
-Flattened 28×28 images into 784-length vectors
+---
 
-Used predefined train-test split
+## Model Architecture
+Artificial Neural Network (ANN):
 
-Artificial Neural Network Model
-ANN Architecture
+- Input Layer: 784 neurons
+- Hidden Layer 1: 128 neurons (ReLU activation)
+- Hidden Layer 2: 64 neurons (ReLU activation)
+- Output Layer: 10 neurons (Softmax activation)
 
-Input Layer: 784 neurons
+Loss Function: Categorical Crossentropy  
+Optimizer: Adam  
+Evaluation Metric: Accuracy  
 
-Hidden Layer: 128 neurons (ReLU activation)
+---
 
-Output Layer: 10 neurons (Softmax activation)
-
-The Softmax function outputs probability scores for each digit class.
-
-Model Performance
-
-Training Accuracy: ~98%
-
-Test Accuracy: 97.8%
+## Model Performance
+- Training Accuracy: ~98%
+- Testing Accuracy: ~97%
 
 Evaluation Metrics:
+- Accuracy
+- Confusion Matrix
+- Classification Report
 
-Accuracy
+The model performs well in recognizing handwritten digits with high accuracy.
 
-Confusion Matrix
+---
 
-The model demonstrates strong performance in classifying handwritten digits.
+## How to Run the Project
 
-How to Run the Project
+1. Clone the repository
+2. Install required libraries:
 
-Clone the repository
-
-Install required libraries:
-
+```bash
 pip install -r requirements.txt
+```
 
-Open the Jupyter Notebook
+3. Open the Jupyter Notebook
+4. Run all cells sequentially
 
-Run all cells sequentially
+---
 
-Future Improvements
+## Future Improvements
+- Add Convolutional Neural Network (CNN) for higher accuracy
+- Implement Dropout for regularization
+- Deploy as a web application
+- Use real-time digit recognition
 
-Implement Convolutional Neural Networks (CNN)
+---
 
-Perform hyperparameter tuning
+## Repository Structure
 
-Deploy the model using Flask or Streamlit
-
-Repository Structure
+```
 MNIST-Digit-Classification-ANN/
-│
-├── MNIST_Digit_Classification_Using_Neural_Networks.ipynb
-├── MNIST_Digit_Classification_Using_ANN_Presentation.pptx
-├── PROJECT REPORT.docx
-├── requirements.txt
-└── README.md
-Conclusion
+│── MNIST_Digit_Classification.ipynb
+│── requirements.txt
+│── README.md
+```
 
-This project demonstrates the practical implementation of Artificial Neural Networks for image classification tasks.
-The ANN model successfully classifies handwritten digits with high accuracy.
+---
+
+## Conclusion
+This project demonstrates how Artificial Neural Networks can effectively classify handwritten digits. The model achieves high accuracy and showcases the power of deep learning in image classification tasks.
