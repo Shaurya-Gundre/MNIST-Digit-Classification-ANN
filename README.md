@@ -39,16 +39,6 @@ Instead, the dataset is directly loaded using TensorFlow/Keras:
 ```python
 from tensorflow.keras.datasets import mnist
 
-
-## Dataset Information
-- Dataset: MNIST Handwritten Digits
-- Total Training Images: 60,000
-- Total Testing Images: 10,000
-- Image Size: 28 × 28 pixels
-- Number of Classes: 10 (Digits 0–9)
-
----
-
 ## Technologies Used
 - Python
 - NumPy
